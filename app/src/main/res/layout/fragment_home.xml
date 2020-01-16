@@ -54,7 +54,7 @@
             android:text="@string/menu_my_diets"
             android:textSize="@dimen/large_btn_text_size"
             app:cornerRadius="@dimen/large_btn_radius"
-            app:icon="@drawable/ic_menu_foods_recipes"
+            app:icon="@drawable/ic_menu_my_diets"
             app:iconPadding="@dimen/large_btn_icon_padding"
             app:iconSize="@dimen/large_btn_icon_size" />
 
