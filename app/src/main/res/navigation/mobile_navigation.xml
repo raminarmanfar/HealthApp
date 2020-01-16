@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.raminarmanfar.healthapp.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_calories_list"
+        android:name="com.raminarmanfar.healthapp.ui.calories_list.CaloriesListFragment"
+        android:label="@string/menu_calories_list"
+        tools:layout="@layout/fragment_calories_list" />
+
+    <fragment
+        android:id="@+id/nav_foods_recipes"
+        android:name="com.raminarmanfar.healthapp.ui.foods_recipes.FoodsRecipesFragment"
+        android:label="@string/menu_food_recipes"
+        tools:layout="@layout/fragment_foods_recipes" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.raminarmanfar.healthapp.ui.settings.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.raminarmanfar.healthapp.ui.share.ShareFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_share" />
+
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="com.raminarmanfar.healthapp.ui.send.SendFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_send" />
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.raminarmanfar.healthapp.ui.about.AboutFragment"
+        android:label="@string/menu_about"
+        tools:layout="@layout/fragment_about" />
+
+    <fragment
+        android:id="@+id/nav_my_diets"
+        android:name="com.raminarmanfar.healthapp.ui.my_diets.MyDietsFragment"
+        android:label="@string/menu_my_diets"
+        tools:layout="@layout/fragment_my_diets" />
+</navigation>
