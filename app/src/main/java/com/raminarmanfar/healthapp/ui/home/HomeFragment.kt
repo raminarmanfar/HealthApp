@@ -30,6 +30,7 @@ class HomeFragment : Fragment(), View.OnClickListener {
         homeViewModel.text.observe(this, Observer {
             textView.text = it
         })
+
         return root
     }
 
