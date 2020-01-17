@@ -1,13 +1,14 @@
 package com.raminarmanfar.healthapp.ui.calories_list
 
 import android.content.ContentValues
+import android.content.Context
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.inputmethod.EditorInfo
+import android.view.inputmethod.InputMethodManager
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -74,10 +75,14 @@ class CaloriesListFragment : Fragment() {
 
                 txtName.text.clear()
                 txtType.text.clear()
-                txtName.onEditorAction(EditorInfo.IME_ACTION_DONE);
-                txtType.onEditorAction(EditorInfo.IME_ACTION_DONE);
+                view.hideKeyboard()
             }
         }
+    }
+
+    fun View.hideKeyboard() {
+        val imm = context.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+        imm.hideSoftInputFromWindow(windowToken, 0)
     }
 
     private fun getAllCategories(): Cursor {
